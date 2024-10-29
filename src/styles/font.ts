@@ -1,1 +1,1 @@
-export const globalFont = `Roboto, YakuHanJPs_Narrow, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif`
+export const globalFont = `Arial, YakuHanJPs_Narrow, Hiragino Sans, Hiragino Kaku Gothic ProN, Meiryo, Noto Sans JP, sans-serif`
