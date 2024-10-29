@@ -27,4 +27,4 @@ jobs:
           firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_PLUME_UI }}'
           channelId: live
           projectId: plume-ui
-          firebaseToolsVersion: 12.9.1
+          firebaseToolsVersion: 11.30.0
