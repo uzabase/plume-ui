@@ -2,7 +2,8 @@ $base-letter-spacing: 0.018em !default;
 
 :root {
   font-size: 15px;
-  font-family: $global-font !important;
+  font-family: $font-family !important;
+  font-weight: font-weight(normal);
   color: $text;
   letter-spacing: $base-letter-spacing;
 }

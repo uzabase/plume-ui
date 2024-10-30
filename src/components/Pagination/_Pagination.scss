@@ -27,7 +27,7 @@
   i {
     color: $black10;
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: font-weight(bold);
   }
 
   &:not(.is-disabled):hover {

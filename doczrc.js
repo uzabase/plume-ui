@@ -19,10 +19,6 @@ export default {
       links: [
         {
           rel: 'stylesheet',
-          href: 'https://fonts.googleapis.com/css?family=Roboto'
-        },
-        {
-          rel: 'stylesheet',
           href: 'https://cdn.remixicon.com/releases/v2.0.0/remixicon.css'
         }
       ]

@@ -1,5 +1,6 @@
 import * as React from 'react'
 import styled from '@emotion/styled'
+import { font } from '../styles/font'
 
 type Props = {
   name: string
@@ -50,7 +51,7 @@ const Desc = styled.div`
 
   > span:first-of-type {
     color: #333;
-    font-weight: bold;
+    font-weight: ${font.weight.bold};
   }
 
   > span:last-of-type {

@@ -7,3 +7,34 @@ route: /font
 # Font
 
 font-familyに指定するフォントをSassの変数([source](https://github.com/Japan-Venture-Research/plume-ui/blob/master/src/styles/_font.scss))とJavaScriptの変数([source](https://github.com/Japan-Venture-Research/plume-ui/blob/master/src/styles/font.ts))として定義しています。
+
+## ウェイト
+font-weightは言語によって調整されています。
+直に `bold` や `700` といった指定は書かないでください。
+
+### Sass
+SassではSassのfunctionを呼び出してください。
+```
+.normal {
+  font-weight: font-weight(normal);
+}
+
+.bold {
+  font-weight: font-weight(bold);
+}
+```
+
+### Emotion
+```
+import { font } from 'plume-ui'
+
+...
+  css={css`
+    font-weight: ${font.weight.normal};
+  `}
+...
+  css={css`
+    font-weight: ${font.weight.bold};
+  `}
+...
+```

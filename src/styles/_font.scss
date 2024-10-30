@@ -1,2 +1,25 @@
-$global-font: Arial, YakuHanJPs_Narrow, Hiragino Sans, Hiragino Kaku Gothic ProN,
+$font-family: Arial, YakuHanJPs_Narrow, Hiragino Sans, Hiragino Kaku Gothic ProN,
   Meiryo, Noto Sans JP, sans-serif;
+
+:root {
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+}
+
+:root:lang(ja) {
+  --font-weight-normal: 300;
+  --font-weight-bold: 600;
+}
+
+:root:lang(en) {
+  --font-weight-normal: 300;
+  --font-weight-bold: 600;
+}
+
+@function font-weight($weight) {
+  @if ($weight == bold) {
+    @return var(--font-weight-bold);
+  } @else {
+    @return var(--font-weight-normal);
+  }
+}
